@@ -12,6 +12,7 @@
         
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/cover.css">
+        <link rel="stylesheet" href="lightbox/css/lightbox.min.css">
 
         <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
 
@@ -20,7 +21,13 @@
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
         <script src="js/libs/modernizr-2.5.3.min.js"></script>
-        <title></title>
+        <title>Bikers and Routes MC</title>
+
+        <style>
+		    header{text-align:center;}
+		    article img{max-height:180px;}
+		    article p,footer p{text-align:center;}
+        </style>
     </head>
     <body>
 
@@ -65,7 +72,50 @@
             <div class="site-wrapper">
             <div class="site-wrapper-inner">
                 <div class="cover-container">
-
+                    <div class="container galeria">
+		                <articles class="row">
+			                <article class="col-md-3">
+				                <a href="images/img1.jpg" data-lightbox="example-set" data-title="Regala">
+				                <img src="images/img1.jpg" alt="Regala" class="img-thumbnail"></a>
+				                <p>Regala</p>
+			                </article>
+			                <article class="col-md-3">
+				                <a href="images/img2.jpg" data-lightbox="example-set" data-title="Descansa">
+				                <img src="images/img2.jpg" alt="Descansa" class="img-thumbnail"></a>
+				                <p>Descansa</p>
+			                </article>
+			                <article class="col-md-3">
+				                <a href="images/img3.jpg" data-lightbox="example-set" data-title="Empatiza">
+				                <img src="images/img3.jpg" alt="Empatiza" class="img-thumbnail"></a>
+				                <p>Empatiza</p>
+			                </article>
+			                <article class="col-md-3">
+				                <a href="images/img4.jpg" data-lightbox="example-set" data-title="Ház deporte">
+				                <img src="images/img4.jpg" alt="Ház deporte" class="img-thumbnail"></a>
+				                <p>Ház deporte</p>
+			                </article>
+			                <article class="col-md-3">
+				                <a href="images/img5.jpg" data-lightbox="example-set" data-title="Vuela">
+				                <img src="images/img5.jpg" alt="Vuela" class="img-thumbnail"></a>
+				                <p>Vuela</p>
+			                </article>
+			                <article class="col-md-3">
+				                <a href="images/img6.jpg" data-lightbox="example-set" data-title="Sueña">
+				                <img src="images/img6.jpg" alt="Sueña" class="img-thumbnail"></a>
+				                <p>Sueña</p>
+			                </article>
+			                <article class="col-md-3">
+				                <a href="images/img7.jpg" data-lightbox="example-set" data-title="Viaja">
+				                <img src="images/img7.jpg" alt="Viaja" class="img-thumbnail"></a>
+				                <p>Viaja</p>
+			                </article>
+			                <article class="col-md-3">
+				                <a href="images/img8.jpg" data-lightbox="example-set" data-title="Relájate">
+				                <img src="images/img8.jpg" alt="Relájate" class="img-thumbnail"></a>
+				                <p>Relájate</p>
+			                </article>
+		                </articles>
+	                </div>
                 </div>
             </div>
         </div>
@@ -96,5 +146,12 @@
             g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
           </script>
+
+        <script src="lightbox/js/lightbox.min.js"></script>
+        <script>
+	        lightbox.option({
+		        'albumLabel': "Imagen %1 de %2"
+	        })
+        </script>
     </body>
 </html>
