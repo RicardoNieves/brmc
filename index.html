@@ -11,19 +11,16 @@
   <!-- Use the .htaccess and remove these lines to avoid edge case issues.
        More info: h5bp.com/i/378 -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Bikers and Routes MC</title>
   <meta name="description" content="">
 
-  <!-- Mobile viewport optimized: h5bp.com/viewport -->
-  <meta name="viewport" content="width=device-width">
-
-  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
-
-  
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->  
   <!--<link rel="stylesheet" href="css/style.css">-->
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/cover.css">
+  <link href="css/carousel.css" rel="stylesheet">
 
   <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
 
@@ -31,14 +28,13 @@
        Modernizr enables HTML5 elements & feature detects for optimal performance.
        Create your own custom Modernizr build: www.modernizr.com/download/ -->
   
-    <!-- Librería jQuery requerida por los plugins de JavaScript -->
+  <!-- Librería jQuery requerida por los plugins de JavaScript -->
   <script src="http://code.jquery.com/jquery.js"></script>
   <script src="js/popper.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+  <script src="js/libs/modernizr-2.5.3.min.js"></script> 
 </head>
 <body>
-
   <header>
     <div class="site-wrapper">
         <div class="site-wrapper-inner">
@@ -53,7 +49,7 @@
                   <h4 class="text-white">Contact</h4>
                   <ul class="list-unstyled">
                     <li><a href="#" class="text-white">Follow on Twitter</a></li>
-                    <li><a href="#" class="text-white">Like on Facebook</a></li>
+                    <li><a href="https://www.facebook.com/bikersroutesmexico/" class="text-white">Facebook</a></li>
                     <li><a href="#" class="text-white">Email me</a></li>
                   </ul>
                 </div>
@@ -77,27 +73,33 @@
         </div>
     </div>
   </header>
-
 <div role="main">
-
-      <div class="site-wrapper">
+    <div class="site-wrapper">
         <div class="site-wrapper-inner">
             <div class="cover-container">
                 <h4 class="display-4">Historia</h4>
-                <p>Bikers and routes se funda en el a&ntilde;o 2014, nace la idea de un grupo de jovenes apacionados al motociclismo</p>
-                <h4 class="display-4">Misi&oacute;n</h4>
-                <p>
-                    Promover la <strong>libertad</strong> en todas sus expreciones sin dejar de lado la responsabilidad.<br>Promover el gusto por las motocicletas
-                    como una actividad <strong>responsable, segura, y satisfactoria</strong> en un ambiente de hermandad, apoyo mutuo, respeto, democracia, solidaridad, honestidad y superaci&oacute;n.
-                </p>
-                <h1 class="display-4">Visi&oacute;n</h1>
-                <p>
-                    consolidarse como organizaci&oacute;n de caracter social, con crecimiento sostenido conformado por personas con una clara consiencia de nuestra misi&oacute;n, con valores y buenas costumbres.
-                </p>
-                <h4 class="display-4">Valores</h4>
-                <p>
-                    Honestidad, Responsabilidad, Sinceridad, Lealtad, Puntualidad, Sensibilidad, Respeto, Alegría, Paciencia, Sencillez, Optimismo, Generosidad.
-                </p>
+                <p class="lead">Bikers and routes se funda en el a&ntilde;o 2014, <br>nace la idea de un grupo de jovenes apacionados al motociclismo</p>
+                <div class="row">
+                    <div class="col-md-5">
+                        <h4 class="display-4">Misi&oacute;n</h4>
+                        <p class="lead text-left">
+                            Promover la <strong>libertad</strong> en todas sus expreciones sin dejar de lado la responsabilidad.<br>Promover el gusto por las motocicletas
+                            como una actividad <strong>responsable, segura, y satisfactoria</strong> en un ambiente de hermandad, apoyo mutuo, respeto, democracia, solidaridad, honestidad y superaci&oacute;n.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <h1 class="display-4">Visi&oacute;n</h1>
+                        <p class="lead text-left"> 
+                            consolidarse como organizaci&oacute;n de caracter social, con crecimiento sostenido conformado por personas con una clara consiencia de nuestra misi&oacute;n, con valores y buenas costumbres.
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                        <h4 class="display-4">Valores</h4>
+                        <p class="lead text-left">
+                            Honestidad, Responsabilidad, Sinceridad, Lealtad, Puntualidad, Sensibilidad, Respeto, Alegría, Paciencia, Sencillez, Optimismo, Generosidad.
+                        </p>
+                    </div>
+                </div>                
                 <h5 class="display-5">Como ser parte de BRMC</h5>                
                     <ol class="text-left">
                         <li class="text-white">Asistir como invitado a dos juntas generales.</li>
@@ -112,69 +114,67 @@
         </div>
     </div>
 
-     <div class="site-wrapper">
+    <div class="site-wrapper">
         <div class="site-wrapper-inner">
-            <div class="cover-container">
+            <div class="">
 
-       <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="first-slide" src="images/img9.jpg" width="80%" height="50%" alt="First slide">
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>Aniversario BRMC.</h1>
-                <p>25 y 26 noviembre.</p>
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Info...</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img class="second-slide" src="images/mazatlan.png" alt="Second slide">
-            <div class="container">
-              <div class="carousel-caption">
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Info...</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img class="third-slide" src="images/leon.jpg" alt="Third slide">
-            <div class="container">
-              <div class="carousel-caption">
-                <p><a class="btn btn-lg btn-primary" href="#" role="button">Info...</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#myCarousel" data-slide-to="1"></li>
+                      <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">            
+                        <div class="container">
+                          <img src="images/flayer.jpg" width="35%" height="30%" alt="Aniversario">
+                          <div class="carousel-caption text-left">
+                            <h1>4ta Noche Route.</h1>                
+                            <p><a class="btn btn-lg btn-primary" href="aniversarioBrmc.html" role="button">Info...</a></p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">            
+                        <div class="container">
+                            <img src="images/mazatlan.png" width="50%" height="50%" alt="Mazatlán">
+                            <div class="carousel-caption">
+                                <h1>Mazatlán Sinaloa</h1>
+                                <p><a class="btn btn-lg btn-primary" href="http://www.legendariasmm.com/" target="_blank" role="button">Info...</a></p>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">            
+                        <div class="container">
+                            <img src="images/leon.jpg" width="35%" height="30%" alt="Mazatlán">
+                          <div class="carousel-caption text-right">
+                            <h1>Moto fiesta León Gto..</h1>                
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Info...</a></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
                 </div>
             </div>
-         </div>
+         </div>   
 </div>
+<footer class="container">
+    <p class="float-right"><a href="#">Back to top</a></p>
+    <p>&copy; by Ricardo Nieves. &middot;</p>
+    <div>          
+        <a href="#"><img src="images/logo-facebook.png" width="50" height="50" alt="Facebook" ><p>Facebook</p></a>
+    </div>
+</footer>
 
-    
-
-  <footer class="container">
-      <p class="float-right"><a href="#">Back to top</a></p>
-      <p>&copy; by Ricardo Nieves. &middot;</p>
-
-      <div>          
-          <a href="#"><img src="images/logo-facebook.png" width="50" height="50" alt="Facebook" ><p>Facebook</p></a>
-      </div>
-  </footer>
-
+ 
   <!-- JavaScript at the bottom for fast page loading -->
 
   <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
